@@ -1,0 +1,1365 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.parent {
+    box-shadow: 0px 2px 10px 0px gray;
+    padding-top: 5px;
+    background-color: hsl(0, 0%, 95%);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: Big Shoulders Display;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+    color: hsl(199, 79%, 43%);
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px 3px 8px 5px;
+    border: 2px solid hsl(199, 79%, 43%);
+    transition: .4s;
+}
+
+ul li a:hover {
+    background-color: hsl(199, 79%, 43%);
+    border: 2px solid hsl(0, 2%, 91%);
+    color: white;
+}
+
+.logo {
+    width: 70px;
+}
+
+.pro {
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.list {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+    position: fixed;
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1;
+}
+
+.list li {
+    list-style: none;
+    margin-top: 45px;
+    margin-left: 225px;
+}
+
+.list li a {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Inter';
+    background-color: white;
+    border-radius: 10px;
+    color: hsl(199, 79%, 43%);
+    font-weight: 600;
+    transition: .4s;
+    border: 2px solid hsl(199, 79%, 43%);
+}
+
+.ph {
+    padding: 18px 34%;
+}
+.h  {
+    padding: 18px 32%;
+}
+.w {
+    padding: 18px 33.3%;
+}
+.t {
+    padding: 18px 34.2%;
+}
+.l {
+    padding: 18px 33.3%;
+}
+
+.list li a:hover {
+    background-color: hsl(199, 79%, 43%);
+    color: white;
+}
+
+.list-2 {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+    position: fixed;
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1;
+}
+
+.list-2 li {
+    list-style: none;
+    margin-top: 45px;
+    margin-left: 225px;
+}
+
+.list-2 li a {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Inter';
+    background-color: white;
+    border-radius: 10px;
+    color: hsl(199, 79%, 43%);
+    font-weight: 600;
+    transition: .4s;
+    border: 2px solid hsl(199, 79%, 43%);
+}
+
+.list-2 li a:hover {
+    background-color: hsl(199, 79%, 43%);
+    color: white;
+}
+
+.s {
+    padding: 18px 391px;
+}
+.m {
+    padding: 18px 414px;
+}
+
+.show {
+    display: block;
+}
+
+.atr {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.atr i {
+    margin: 0 10px;
+}
+
+.list-bar {
+    background-color: black;
+    position: fixed;
+    top: 8%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    border-radius: 20px 0px 0px 20px;
+    animation-name: example;
+    animation-duration: 1s;
+    filter: drop-shadow(-4px 0px 1px gray);
+    z-index: 2;
+}
+
+@keyframes example {
+    0%   {top:150px;}
+}
+
+.list-bar li {
+    margin: 30px 0px;
+    list-style: none;
+    padding-left: 15px;
+}
+
+.list-bar li a {
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-family: 'inter';
+    font-weight: 200;
+    background: linear-gradient(90deg, #000, hsl(199, 79%, 43%), #000, hsl(199, 79%, 43%), #000);
+    background-size: 400%;
+    animation: rgbb 10s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.list-bar li a:hover {
+    background-color: black;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.p-b {
+    padding: 10px 20%;
+}
+
+.h-b {
+    padding: 10px 7%;
+}
+
+.w-b {
+    padding: 10px 17%;
+}
+
+.t-b {
+    padding: 10px 22%;
+}
+
+.l-b {
+    padding: 10px 18%;
+}
+
+#clo1se {
+    margin: 19px;
+    border-radius: 15px;
+    border: none;
+    background-color: grey;
+}
+
+.container {
+    background-image: url(image/picture--1.jpeg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.image img {
+    width: 400px;
+    margin-left: 400px;
+    height: 500px;
+    margin-bottom: -4px;
+}
+
+/* .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+} */
+
+.text {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.h1 {
+    font-family: inter;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 200;
+    background: linear-gradient(90deg, #fff, hsl(199, 79%, 43%), #fff, hsl(199, 79%, 43%), #fff);
+    background-size: 400%;
+    animation: rgbb 10s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.p {
+    font-family: inter;
+    margin-bottom: 30px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #fff, hsl(199, 79%, 43%), #fff, hsl(199, 79%, 43%), #fff);
+    background-size: 400%;
+    animation: rgbb 10s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.social-icon a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 10px 3px 8px 5px;
+    border: 2px solid hsl(199, 79%, 43%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.wats:hover {
+    background-color: hsl(119, 100%, 38%);
+    transform: scale(1.1);
+}
+.insta:hover {
+    background-color: hsl(18, 100%, 50%);
+}
+.face:hover {
+    background-color: hsl(234, 85%, 51%);
+}
+
+.up {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #2b7ec2;
+    padding: 18px 20px;
+    border-radius: 49%;
+    z-index: 1;
+    filter: drop-shadow(1px 1px 10px gray);
+}
+
+/* section phones */
+/* section phones */
+
+.content-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card , .card-2 , .card-3 , .card-4 , .card-5{
+    background-image: url(image/phone--1.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 480px;
+    width: 70%;
+    padding: 42px;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 10px 10px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.card-2 {
+    background-image: url(image/picture--1--head.jpeg) !important;
+    background-color: hsl(184, 100%, 22%) !important;
+    background-size: 470px;
+}
+
+.card .h1-type, .card-2 .h1-type, .card-3 .h1-type, .card-4 .h1-type, .card-5 .h1-type {
+    font-family: Big Shoulders Display;
+    text-transform: uppercase;
+    font-size: 41px;
+    color: hsl(0, 0%, 95%);
+    padding: 31px 0;
+    background: linear-gradient(90deg, #fff, black, #fff, black, #fff);
+    background-size: 400%;
+    animation: rgbb 10s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.card .p-dis , .card-2 .p-dis , .card-3 .p-dis, .card-4 .p-dis, .card-5 .p-dis {
+    font-family: Lexend Deca;
+    font-size: 14.5px;
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 30px;
+    line-height: 28px;
+    background: linear-gradient(90deg, #fff, black, #fff, black, #fff);
+    background-size: 400%;
+    animation: rgbb 10s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* section phone */
+/* section phone */
+
+#phone {
+    background-image: url(image/phone--1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cate {
+    text-align: center;
+    padding-top: 73px;
+    font-size: 79px;
+    font-family: 'Lexend Deca';
+    color: darkgray;
+}
+
+.cate2 {
+    text-align: center;
+    margin-top: -78px;
+    font-family: 'Lexend Deca';
+    font-size: 52px;
+}
+
+.image-cart img {
+    width: 203px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.content-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cart {
+    width: 203px;
+    margin: 62px;
+    filter: drop-shadow(2px 4px 6px black);
+    transition: .4s;
+}
+
+.cart:hover {
+    transform: scale(1.1);
+}
+
+.text-cart , .text-cart-2 , .text-cart-3, .text-cart-4, .text-cart-5 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 10px;
+    border-radius: 00px 0px 10px 10px;
+    margin-top: -5px;
+    width: 203px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    color: white;
+    transition: .4s;
+}
+
+.text-cart:hover {
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+}
+
+.text-cart-2 {
+    background-color: hsl(184, 100%, 22%) !important;
+}
+
+.text-cart-2:hover {
+    background-color: white !important;
+    color: hsl(184, 100%, 22%);
+}
+
+.cart a {
+    text-decoration: none;
+}
+
+#headphones {
+    background-image: url(image/picture--1--head.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.h2 {
+    font-size: 21px !important;
+}
+
+#watches-1 {
+    background-image: url(image/back-watch.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-3 {
+    background-image: url(image/back-watch.jpeg) !important;
+    background-color: rgb(163, 15, 15) !important;
+    background-size: 470px;
+}
+
+.card-4 {
+    background-image: url(image/ipad.jpeg) !important;
+    background-color: rgb(23, 21, 139) !important;
+    background-size: 470px;
+}
+
+.text-cart-3 {
+    background-color: rgb(163, 15, 15) !important;
+}
+
+.text-cart-3:hover {
+    background-color: white !important;
+    color: rgb(163, 15, 15);
+}
+
+.text-cart-4 {
+    background-color: rgb(23, 21, 139) !important;
+}
+
+.text-cart-4:hover {
+    background-color: white !important;
+    color: rgb(23, 21, 139);
+}
+
+#tablet {
+    background-image: url(image/ipad.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-5 {
+    background-image: url(image/laptop--.jpeg) !important;
+    background-color: rgb(177, 18, 92) !important;
+    background-size: 470px;
+}
+
+#laptop-1 {
+    background-image: url(image/laptop--.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 130px;
+}
+
+.text-cart-5 {
+    background-color: rgb(177, 18, 92) !important;
+}
+
+.text-cart-5:hover {
+    background-color: white !important;
+    color: rgb(177, 18, 92);
+}
+
+.content-footer {
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer, .footer-watch {
+    padding: 30px 0px;
+    background-image: url(image/picture--1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0px 0px;
+    filter: drop-shadow(0px -4px 7px black);
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 23px;
+}
+
+footer li a {
+    text-decoration: none;
+    font-family: Big Shoulders Display;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: 23px;
+    color: hsl(199, 79%, 43%);
+    padding: 0px 50px;
+    transition: .4s;
+}
+
+footer button {
+    font-family: Lexend Deca;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    transition: .4s;
+    margin-left: 45px;
+}
+
+footer button:hover {
+    background-color: hsl(199, 79%, 43%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.contact input {
+    padding-left: 10px;
+    width: 262px;
+    height: 34px;
+    margin: 19px 0px 22px 44px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    /* border: 2px solid red; */
+}
+
+input#text {
+    height: 173px;
+    width: 462px;
+}
+
+input:placeholder-shown {
+    padding-left: 10px;
+}
+
+.date {
+    margin: 10px;
+    font-family: inter;
+    font-size: 19px;
+    font-weight: 200;
+    background: linear-gradient(90deg, #fff, hsl(199, 79%, 43%), #fff, hsl(199, 79%, 43%), #fff);
+    background-size: 400%;
+    animation: rgbb 10s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+.copy {
+    margin: 10px;
+    font-family: inter;
+    font-size: 26px;
+    font-weight: 200;
+    background: linear-gradient(90deg, #fff, hsl(199, 79%, 43%), #fff, hsl(199, 79%, 43%), #fff);
+    background-size: 400%;
+    animation: rgbb 10s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+#bar {
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.card , .card-2 , .card-3 , .card-4 , .card-5 , .cart {
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 35%;
+}
+
+
+
+/* html-watches */
+
+.container-f {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cate1 {
+    text-align: center;
+    padding-top: 112px;
+    font-size: 54px;
+    font-family: 'Lexend Deca';
+    color: darkgray;
+}
+
+.cate3 {
+    text-align: center;
+    margin-top: -50px;
+    font-family: 'Lexend Deca';
+    font-size: 44px;
+}
+
+.content-f {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-f img {
+    width: 400px;
+    border-radius: 10px;
+    filter: drop-shadow(0px -4px 0px rgb(212, 181, 0));
+}
+
+.image-f .blue {
+    filter: drop-shadow(0px -4px 0px rgb(10, 31, 212));
+}
+
+.image-f .brown {
+    filter: drop-shadow(0px -4px 0px chocolate);
+}
+
+.images-f {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.images-f img, .image-f .filter{
+    width: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .4s;
+    filter: brightness(0.5);
+}
+
+.images-f img:hover {
+    transform: scale(1.1);
+    filter: none;
+}
+
+.text-f {
+    padding: 20px;
+    margin-top: -176px;
+}
+
+.text-f h1 {
+    font-size: 75px;
+    font-family: 'Lexend Deca';
+    color: #cc1d1d;
+    filter: drop-shadow(2px 4px 2px black);
+}
+
+.text-f h3 {
+    font-size: 12px;
+    width: 495px;
+    line-height: 26px;
+    text-align: -webkit-center;
+    font-family: 'Lexend Deca';
+    margin-bottom: 33px;
+}
+
+.text-f .dis, .dis-b, .dis-br {
+    width: 495px;
+    font-family: 'Lexend Deca';
+    font-size: 11px;
+    line-height: 20px;
+    text-align: justify;
+    color: #bba52b;
+}
+
+.text-f .dis-br {
+    color: chocolate;
+}
+
+.text-f .dis-b {
+    color: rgb(0, 0, 146) !important;
+}
+
+.title-f, .title-f-b, .title-f-br {
+    color: #bba52b;
+    font-family: monospace;
+}
+
+.title-f-br {
+    color: chocolate;
+}
+
+.title-f-b {
+    color: rgb(0, 0, 146) !important;
+}
+
+.text-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 495px;
+    margin-top: 60px;
+}
+
+.bttn a, .a-ph-orange {
+    padding: 10px 20px;
+    background-color: #cc1d1d;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Lexend Deca';
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.bttn a:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: #cc1d1d;
+    border: 2px solid #cc1d1d;
+}
+
+.a-ph-orange {
+
+    background-color: hsl(31, 77%, 52%) !important;
+}
+
+.a-ph-orange:hover {
+    background-color: hsl(0, 0%, 95%) !important;
+    color: hsl(31, 77%, 52%) !important;
+    border: 2px solid hsl(31, 77%, 52%) !important;
+}
+
+.bttn {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-family: 'Lexend Deca';
+    font-size: 24px;
+    color: #cc1d1d;
+    font-weight: 600;
+}
+
+hr {
+    font-size: 20px;
+    height: 0vh;
+    width: 625px;
+    margin-bottom: 30px;
+}
+
+input {
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #dadada;
+    width: 267px;
+    height: 26px;
+}
+
+.inp-bu {
+    border: 1px solid #d6d6d6;
+    width: 72px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: hsl(199, 79%, 43%);
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.inp-bu:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(199, 79%, 43%);
+}
+
+.inp-search:placeholder-shown {
+    font-size: 10px;
+}
+
+.inp-search {
+    padding-left: 10px;
+}
+
+.ph-orange {
+    color: hsl(31, 77%, 52%) !important;
+}
+
+.footer-watch {
+    background-image: url(image/back-watch.jpeg) !important;
+}
+
+.footer-phone {
+    background-image: url(image/iphone-back-phone.jpg) !important;
+}
+
+.footer-headphone {
+    background-image: url(image/picture--1--head.jpeg) !important;
+}
+
+.footer-ipad {
+    background-image: url(image/ipad.jpeg) !important;
+}
+
+.footer-laptop {
+    background-image: url(image/laptop--.jpeg) !important;
+}
+
+.big-nice-buy {
+    background-color: #95c2c2a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.nice-buy {
+    position: fixed;
+    top: 35%;
+    left: 29%;
+    background-color: #fff;
+    padding: 72px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nice-buy .fa-2xl {
+    font-size: 7em;
+    line-height: .03125em;
+    vertical-align: -.1875em;
+}
+
+.nice-buy h3 {
+    margin-top: 80px;
+    font-family: 'Lexend Deca';
+    color: limegreen;
+    font-size: 37px;
+}
+
+.nice-buy p {
+    font-family: 'Lexend Deca';
+    background: linear-gradient(90deg, limegreen, #fff, limegreen, #fff, limegreen);
+    background-size: 400%;
+    animation: rgbb 10s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-weight: 300;
+}
+
+.hd-teal { 
+    color: hsl(184, 100%, 22%) !important;
+}
+
+.ip-blue {
+    color: rgb(23, 21, 139) !important;
+}
+
+.a-ip-blue {
+    background-color: rgb(23, 21, 139) !important;
+}
+
+.a-ip-blue:hover {
+    background-color: hsl(0, 0%, 95%) !important;
+    color: rgb(23, 21, 139) !important;
+    border: 2px solid rgb(23, 21, 139) !important;
+}
+
+.a-hd-teal {
+    background-color: hsl(184, 100%, 22%) !important;
+}
+
+.a-hd-teal:hover {
+    background-color: hsl(0, 0%, 95%) !important;
+    color: hsl(184, 100%, 22%) !important;
+    border: 2px solid hsl(184, 100%, 22%) !important;
+}
+
+.lap-color {
+    color: rgb(177, 18, 92) !important;
+}
+
+.a-lap-color {
+    background-color: rgb(177, 18, 92) !important;
+}
+
+.a-lap-color:hover {
+    background-color: hsl(0, 0%, 95%) !important;
+    color: rgb(177, 18, 92) !important;
+    border: 2px solid rgb(177, 18, 92) !important;
+}
+
+/* vodafone cash */
+
+.voda-img {
+    width: 90px;
+}
+
+.vodafone {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.vodafone p {
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #fff, red, #fff, red, #fff);
+    background-size: 400%;
+    animation: rgbb 5s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.vodafone button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    filter: drop-shadow(2px 4px 6px black);
+    font-family: 'Lexend Deca';
+    transition: .4s;
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+.vodafone button:hover {
+    border: 2px solid red;
+    color: red;
+    background-color: hsl(0, 0%, 95%);
+    filter: none;
+}
+
+.voda-dis {
+    display: flex;
+    align-items: center;
+}
+
+.title-vodafone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 11px;
+}
+
+.title-vodafone h3 {
+    margin-bottom: 11px;
+    font-family: Aref Ruqaa;
+    font-size: 30px;
+    background: linear-gradient(90deg, #fff, red, #fff, red, #fff);
+    background-size: 400%;
+    animation: rgbb 5s infinite linear;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title-vodafone .pa {
+    font-size: 18px;
+    margin-top: 10px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    border-left: 7px solid red;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.text-voda {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.text-p {
+    font-weight: 600;
+    background-color: yellow;
+}
+
+.title-vodafone span {
+    background-color: hsl(0, 0%, 95%);
+    color: red;
+}
+
+.voda-p {
+    margin-top: 25px;
+    font-family: 'Lexend Deca';
+}
+
+.voda-wats {
+    text-decoration: none;
+    background: #0cc60c;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: 2px solid #0cc60c;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Lexend Deca';
+    filter: drop-shadow(2px 4px 6px black);
+    transition: .4s;
+}
+
+.voda-wats:hover {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid #0cc60c;
+    color: #0cc60c;
+    filter: none;
+}
+
+.buy-section {
+    padding-bottom: 345px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        opacity: 0;
+        scale: 1;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes rgbb {
+    0%{
+        background-position: 0 ;
+    }
+    100%{
+        background-position: 400%;
+    }
+  }
+
+
+
+  @media (max-width:1023px) {
+
+  }
+  
+  
+  @media (max-width:750px) {
+      .hom {
+        display: block;
+      }
+      .cate2 {
+        margin-top: -49px;
+        font-size: 34px;
+    }
+    .cate {
+        font-size: 48px;
+}
+    ul li a{
+        font-size: 10px;
+        margin-right: 4px;
+    }
+    .navbar {
+        max-width: 100%;
+    }
+    input {
+        width: 155px;
+    }
+    .list {
+        display: none;
+    }
+  }
+  
+  
+  @media (max-width:535px) {
+   
+   .logo {
+      width: 57px;
+   }
+   ul li {
+    margin: 0;
+    display: none;
+    }
+    #bar {
+        display: block;
+    }
+    .copy {
+        font-size: 22px;
+    }
+    .date {
+        font-size: 17px;
+    }
+    .card-5 {
+        background-size: 355px;
+        background-position: center;
+    }
+    .card-4 {
+        background-size: 478px;
+        background-position: center;
+    }
+    .card-2 {
+        background-position: left;
+        background-size: 491px;
+    }
+    .card {
+        background-position: center;
+        background-size: 424px;
+    }
+    .container {
+        background-image: url(image/picture.jpeg);
+    }
+    input#text {
+        height: 173px;
+        width: 264px;
+    }
+    .contact input {
+        width: 199px;
+    }
+    input:placeholder-shown {
+        font-size: 12px;
+    }
+    #watches-1 {
+        background-image: url(image/back-watch-phone.jpeg);
+    }
+    #phone {
+        background-image: url(image/iphone-back-phone.jpg);
+    }
+    #laptop-1 {
+        background-image: url(image/laptop--back-phone.jpeg);
+    }
+    #headphones {
+        background-image: url(image/headphone-back.jpg);
+    }
+    .text-f {
+        padding: 20px 0px;
+        margin-top: -71px;
+    }
+    .text-f h3 {
+        width: 100%;
+    }
+    .text-f h1 {
+        font-size: 60px;
+    }
+    .text-f .dis, .dis-b, .dis-br {
+        width: 100%;
+    }
+    .text-buy {
+        width: 100%;
+    }
+    .image-f .small {
+        width: 282px;
+    }
+    .image-f img {
+        width: 278px;
+    }
+    .images-f img {
+        width: 80px;
+    }
+    .cate1 {
+        font-size: 51px;
+    }
+    .cate3 {
+        margin-top: -101px;
+        font-size: 49px;
+    }
+    .cate-f {
+        margin-top: -49px;
+    }
+    .cate-edit {
+        margin-top: -56px;
+        font-size: 42px;
+    }
+    .cate-tablet {
+        margin-top: -54px;
+        font-size: 38px;
+    }
+    .cate-head {
+        margin-top: -53px;
+        font-size: 36px;
+    }
+    .bttn a, .a-ph-orange {
+        padding: 6px 6px;
+    }
+    .container-f {
+        padding: 20px;
+    }
+    .price {
+        font-size: 19px;
+    }
+    input {
+        width: 117px;
+        border-radius: 10px;
+        height: 22px;
+    }
+    .bttn a, .a-ph-orange {
+        margin-left: 0px;
+    }
+    .inp-bu {
+        display: none;
+    }
+    .footer-watch {
+        background-image: url(image/back-watch-phone.jpeg) !important;
+    }
+    .footer-phone {
+        background-image: url(image/phone-iphone-back-phone.jpg) !important;
+        background-size: cover;
+    }
+    footer {
+        background-image: url(image/picture.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footer-headphone {
+        background-image: url(image/headphone-back.jpg) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footer-ipad {
+        background-image: url(image/ipad.jpeg) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer-laptop {
+        background-image: url(image/laptop--.jpeg) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .atr i{
+        margin: 0 5px;
+    }
+    .nice-buy {
+        top: 22%;
+        left: 7%;
+        right: 7%;
+    }
+    .vodafone p {
+        font-size: 16px;
+    }
+    .title-vodafone .pa {
+        font-size: 13px;
+    }
+    .text-p-edit {
+        font-size: 15px;
+    }
+    .voda-img {
+        width: 84px;
+    }
+    .voda-wats {
+        margin-bottom: 30px;
+    }
+    .buy-section {
+        padding-bottom: 251px;
+    }
+  }
